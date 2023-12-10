@@ -14,6 +14,10 @@ class RgbColor(object):
     def from_tuple(cls, color_tuple: tuple) -> 'RgbColor':
         return cls(*color_tuple)
 
+    @classmethod
+    def from_dict(cls, data: dict) -> 'RgbColor':
+        return cls(int(data['Red']), int(data['Green']), int(data['Blue']))
+
     # <editor-fold desc="Operators">
     def __str__(self):
         return f"Red: {self.red}, Green: {self.green}, Blue: {self.blue}"
