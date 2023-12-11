@@ -1,3 +1,4 @@
+import logging
 from abc import ABC, abstractmethod
 
 from src.colors.rgb_color import RgbColor
@@ -6,6 +7,7 @@ from src.colors.rgb_color import RgbColor
 class LedControllerBase(ABC):
     def __init__(self, pixel_count: int):
         self.pixel_count = pixel_count
+        logging.info("Initializing LedController with pixel count %i", pixel_count)
 
     @abstractmethod
     def set_color(self, index: int, color: RgbColor):
