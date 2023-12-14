@@ -1,7 +1,7 @@
 import logging
 from abc import ABC, abstractmethod
 
-from src.colors.rgb_color import RgbColor
+from src.colors import RgbColor
 
 
 class LedControllerBase(ABC):

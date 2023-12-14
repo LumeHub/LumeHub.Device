@@ -1,5 +1,5 @@
 from src.colors import RgbColor
-from src.effects.effect_base import EffectBase
+from ..effect_base import EffectBase
 from src.led_controller import LedControllerBase
 
 

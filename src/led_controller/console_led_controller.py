@@ -1,7 +1,7 @@
 from colr import color as colr_color
 from numpy import empty
-from src.colors.rgb_color import RgbColor
-from src.led_controller.led_controller_base import LedControllerBase
+from src.colors import RgbColor
+from . import LedControllerBase
 
 
 class ConsoleLedController(LedControllerBase):

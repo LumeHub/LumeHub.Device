@@ -1,8 +1,8 @@
 import adafruit_ws2801
 import board
 
-from src.colors.rgb_color import RgbColor
-from src.led_controller.led_controller_base import LedControllerBase
+from src.colors import RgbColor
+from . import LedControllerBase
 
 
 class LedController(LedControllerBase):

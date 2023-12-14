@@ -1,6 +1,6 @@
-from src.effects.effect_base import EffectBase
-from src.effects.normal import FadeColor, SetColor
-from src.effects.repeating import RainbowWave
+from .effect_base import EffectBase
+from .normal import FadeColor, SetColor
+from .repeating import RainbowWave
 
 
 class EffectFactory:
