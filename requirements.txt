@@ -1,4 +1,4 @@
 Colr~=0.9.1
 numpy==1.26.2
-jsonpickle~=3.0.2
 adafruit-circuitpython-ws2801~=0.10.18
+jsonpickle~=3.0.2
