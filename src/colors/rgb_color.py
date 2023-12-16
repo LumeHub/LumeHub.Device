@@ -55,5 +55,5 @@ class RgbColor(object):
                 and abs(self.blue - other.blue) <= tolerance)
 
     @staticmethod
-    def get_random_color() -> 'RgbColor':
+    def random() -> 'RgbColor':
         return RgbColor(randint(0, 255), randint(0, 255), randint(0, 255))
