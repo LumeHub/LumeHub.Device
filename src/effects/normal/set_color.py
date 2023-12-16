@@ -9,7 +9,7 @@ class SetColor(EffectBase):
 
     @classmethod
     def from_dict(cls, data: dict) -> 'SetColor':
-        return SetColor(RgbColor.from_dict(data.get("Color")))
+        return cls(RgbColor.from_dict(data.get("Color")))
 
     def apply(self, led_controller: LedControllerBase):
         led_controller.set_all_colors(self.color)
